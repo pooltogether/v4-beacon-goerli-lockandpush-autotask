@@ -1,6 +1,6 @@
 import { Relayer } from 'defender-relay-client'
 import { beaconDrawLockAndNetworkTotalSupplyPush } from '@pooltogether/v4-autotask-lib'
-import { testnet as testnestContracts } from '@pooltogether/v4-pool-data'
+import { testnet as contracts } from '@pooltogether/v4-pool-data'
 
 export async function handler(event: any) {
   const relayer = new Relayer(event);
@@ -30,7 +30,7 @@ export async function handler(event: any) {
   }
 
   try {
-    const transactionPopulated = await beaconDrawLockAndNetworkTotalSupplyPush(testnestContracts, config)
+    const transactionPopulated = await beaconDrawLockAndNetworkTotalSupplyPush(contracts, config)
     if (transactionPopulated) {
       let transactionSentToNetwork = await relayer.sendTransaction({
         data: transactionPopulated.data,
