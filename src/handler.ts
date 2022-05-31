@@ -29,7 +29,7 @@ export async function handler(event: any) {
       {
         chainId: 69,
         providerUrl: event.secrets.optimismKovanProviderURL,
-      },
+      }
     ]
   }
 
