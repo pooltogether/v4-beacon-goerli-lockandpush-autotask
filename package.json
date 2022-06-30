@@ -16,28 +16,28 @@
     "reinstall": "rm -rf node_modules/ && yarn cache clean && yarn"
   },
   "dependencies": {
-    "@ethersproject/abstract-provider": "^5.1.0",
-    "@ethersproject/abstract-signer": "^5.1.0",
-    "@ethersproject/providers": "^5.1.0",
-    "@pooltogether/v4-autotask-lib": "^0.1.0-beta.6",
-    "@pooltogether/v4-pool-data": "1.8.0-beta.3",
-    "aws-sdk": "^2.996.0",
-    "commander": "^6.1.0",
-    "defender-autotask-client": "^1.5.1",
-    "defender-relay-client": "^0.2.4",
-    "ethers": "^5.0.14"
+    "@ethersproject/abstract-provider": "5.6.1",
+    "@ethersproject/abstract-signer": "5.6.2",
+    "@ethersproject/providers": "5.6.8",
+    "@pooltogether/v4-autotask-lib": "1.1.0",
+    "@pooltogether/v4-pool-data": "1.8.0-beta.4",
+    "aws-sdk": "2.1166.0",
+    "commander": "9.3.0",
+    "defender-autotask-client": "1.25.0",
+    "defender-relay-client": "1.26.0",
+    "ethers": "5.6.9"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^15.1.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "@rollup/plugin-replace": "^2.3.4",
-    "@rollup/plugin-typescript": "^8.2.5",
-    "builtin-modules": "^3.2.0",
-    "chalk": "^4.1.2",
-    "debug": "^4.3.2",
-    "rollup": "^2.28.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.4"
+    "@rollup/plugin-commonjs": "22.0.1",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-replace": "4.0.0",
+    "@rollup/plugin-typescript": "8.3.3",
+    "builtin-modules": "3.3.0",
+    "chalk": "5.0.1",
+    "debug": "4.3.4",
+    "rollup": "2.75.7",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
   }
 }
