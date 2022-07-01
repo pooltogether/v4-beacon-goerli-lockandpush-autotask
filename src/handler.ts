@@ -4,14 +4,11 @@ import { testnet as contracts } from '@pooltogether/v4-pool-data'
 
 export async function handler(event: any) {
   const relayer = new Relayer(event);
+
   const config = {
     beaconChain: {
       chainId: 4,
       providerUrl: event.secrets.ethereumRinkebyProviderURL,
-    },
-    receiverChain: {
-      chainId: 0,
-      providerUrl: "",
     },
     allPrizePoolNetworkChains: [
       {
@@ -35,6 +32,7 @@ export async function handler(event: any) {
 
   try {
     const transactionPopulated = await beaconDrawLockAndNetworkTotalSupplyPush(contracts, config)
+
     if (transactionPopulated) {
       let transactionSentToNetwork = await relayer.sendTransaction({
         data: transactionPopulated.data,
@@ -42,6 +40,7 @@ export async function handler(event: any) {
         gasLimit: 500000,
         speed: 'fast'
       });
+
       console.log('TransactionHash:', transactionSentToNetwork.hash)
     } else {
       throw new Error('DrawBeacon: Transaction not populated')
