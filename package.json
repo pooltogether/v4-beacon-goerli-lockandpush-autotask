@@ -17,7 +17,7 @@
     "@ethersproject/abstract-signer": "5.6.2",
     "@ethersproject/providers": "5.6.8",
     "@pooltogether/v4-autotask-lib": "1.1.0",
-    "@pooltogether/v4-pool-data": "1.8.0-beta.4",
+    "@pooltogether/v4-pool-data": "1.8.1-beta.2",
     "aws-sdk": "2.1166.0",
     "commander": "9.3.0",
     "defender-autotask-client": "1.25.0",
