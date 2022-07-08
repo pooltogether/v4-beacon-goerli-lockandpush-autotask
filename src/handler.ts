@@ -47,6 +47,5 @@ export async function handler(event: any) {
     }
   } catch (error) {
     console.log(error)
-    throw error;
   }
 }
