@@ -20,10 +20,6 @@ export async function handler(event: any) {
         providerUrl: event.secrets.polygonMumbaiProviderURL,
       },
       {
-        chainId: 43113,
-        providerUrl: event.secrets.avalancheFujiProviderURL,
-      },
-      {
         chainId: 69,
         providerUrl: event.secrets.optimismKovanProviderURL,
       }
