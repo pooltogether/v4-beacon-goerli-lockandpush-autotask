@@ -6,7 +6,6 @@ if (require.main === module) {
     RELAYER_API_SECRET: apiSecret,
     ETHEREUM_RINKEBY_PROVIDER_URL: ethereumRinkebyProviderURL,
     POLYGON_MUMBAI_PROVIDER_URL: polygonMumbaiProviderURL,
-    AVALANCHE_FUJI_PROVIDER_URL: avalancheFujiProviderURL,
     OPTIMISM_KOVAN_PROVIDER_URL: optimismKovanProviderURL
   } = process.env;
 
@@ -16,7 +15,6 @@ if (require.main === module) {
     secrets: {
       ethereumRinkebyProviderURL,
       polygonMumbaiProviderURL,
-      avalancheFujiProviderURL,
       optimismKovanProviderURL
     }
   })
