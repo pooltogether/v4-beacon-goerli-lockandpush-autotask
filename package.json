@@ -1,5 +1,5 @@
 {
-  "name": "v4-beacon-rinkeby-lockandpush-autotask",
+  "name": "v4-beacon-goerli-lockandpush-autotask",
   "description": "PoolTogether V4 Smart Contract execution for TimelockTrigger",
   "version": "0.1.0",
   "type": "commonjs",
@@ -10,7 +10,10 @@
     "build": "rollup -c rollup.config.js",
     "update": "yarn build && ./scripts/updateTask.js",
     "start": "ts-node ./src/cli.ts",
-    "reinstall": "rm -rf node_modules/ && yarn cache clean && yarn"
+    "reinstall": "rm -rf node_modules/ && yarn cache clean && yarn",
+    "format": "prettier --config .prettierrc --write \"**/*.{ts,js}\"",
+    "format:file": "prettier --config .prettierrc --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ethersproject/abstract-provider": "5.4.1",
@@ -33,6 +36,8 @@
     "builtin-modules": "3.2.0",
     "chalk": "4.1.2",
     "debug": "4.3.2",
+    "husky": "8.0.1",
+    "prettier": "2.7.1",
     "rollup": "2.58.0",
     "ts-node": "10.4.0",
     "tslib": "2.3.1",
