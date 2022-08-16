@@ -6,7 +6,7 @@ if (require.main === module) {
     RELAYER_API_SECRET: apiSecret,
     ETHEREUM_GOERLI_PROVIDER_URL: ethereumGoerliProviderURL,
     POLYGON_MUMBAI_PROVIDER_URL: polygonMumbaiProviderURL,
-    OPTIMISM_KOVAN_PROVIDER_URL: optimismKovanProviderURL,
+    OPTIMISM_GOERLI_PROVIDER_URL: optimismGoerliProviderURL,
   } = process.env;
 
   handler({
@@ -15,7 +15,7 @@ if (require.main === module) {
     secrets: {
       ethereumGoerliProviderURL,
       polygonMumbaiProviderURL,
-      optimismKovanProviderURL,
+      optimismGoerliProviderURL,
     },
   })
     .then(() => process.exit(0))
