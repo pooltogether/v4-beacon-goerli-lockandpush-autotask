@@ -1,9 +1,9 @@
-# Beacon (Rinkeby) LockAndPush
+# Beacon (Goerli) LockAndPush
 
-Orchestrates PoolTogether V4 on Beacon (Rinkeby) Testnet
+Orchestrates PoolTogether V4 on Beacon (Goerli) Testnet
 
-**Environment Variable** 
-```.sh 
+**Environment Variable**
+```.sh
 export AUTOTASK_ID=7f3c5e7d-5712-47f6-bafd-70a292749d90
 ```
 
